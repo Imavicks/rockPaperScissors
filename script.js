@@ -16,6 +16,23 @@ function getComputerChoice() {
 
 function game(userChoice) {
     const computerChoice = getComputerChoice();
+    switch (userChoice + computerChoice) {
+        case "rockscissors":
+        case "paperrock":
+        case "scissorspaper":
+            console.log('User wins');
+            break;
+        case "rockpaper":
+        case "paperscissors":
+        case 'scissorsrock':
+            console.log('computer wins');
+            break;
+        case "rockrock":
+        case "paperpaper":
+        case 'scissorscisors':
+            console.log('Its a draw');
+            break;
+    }
 }
 
 function main() {
