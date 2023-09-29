@@ -38,8 +38,6 @@ function draw (userChoice, computerChoice) {
     result_p.innerHTML = userChoice + smallUserWord + " equals " + computerChoice + smallCompWord + " . its a draw!";
 }
 
-
-
 function game(userChoice) {
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice) {
@@ -74,7 +72,4 @@ function main() {
         game('scissors');
     });
 }
-
 main();
-
-
